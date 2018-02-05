@@ -1,0 +1,2 @@
+sudo sed -i 's/mnh10/mnh24/g' /etc/hosts /etc/hostname && sudo sed -i 's/110/124/g' /etc/network/interfaces && sudo dhclient -v -r ovsbr0 && sudo dhclient -v ovsbr0 && sudo init 0
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+for i in {1..32}
+do
+echo '***Deleting requested VM image files left in 192.168.0.10$i --> kvm-host'$i 
+ssh openstack@192.168.0.10$i  ./clrhype.sh
+echo '---Deleted'
+done
+echo '***Deleting slices and flowspaces created in flowvisor'
+ssh openstack@192.168.0.200  ./delreq.sh
+echo '---Deleted'
+echo '--- DONE ---'

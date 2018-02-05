@@ -1,0 +1,607 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY physicalNetOnt "http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#"
+     xml:base="http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:physicalNetOnt="http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasDestInterface -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasDestInterface">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasDestNode -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasDestNode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&physicalNetOnt;Node"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasDestPort -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasDestPort">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&physicalNetOnt;Port"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasElement -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasElement">
+        <owl:inverseOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasInterface -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasInterface">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasLink -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasLink">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdfs:range rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:domain rdf:resource="&physicalNetOnt;Topology"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasNode -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasNode">
+        <rdfs:range rdf:resource="&physicalNetOnt;Node"/>
+        <rdfs:domain rdf:resource="&physicalNetOnt;Topology"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasPort -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasPort">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Interface"/>
+        <rdfs:range rdf:resource="&physicalNetOnt;Port"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasSrcInterface -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasSrcInterface">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasSrcNode -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasSrcNode">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&physicalNetOnt;Node"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+        <owl:inverseOf rdf:resource="&physicalNetOnt;isSrcNodeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasSrcPort -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasSrcPort">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&physicalNetOnt;Port"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+        <owl:inverseOf rdf:resource="&physicalNetOnt;isSrcPortOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hasVSwitch -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;hasVSwitch">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&physicalNetOnt;Switch"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;hasElement"/>
+        <owl:inverseOf rdf:resource="&physicalNetOnt;ifVSwitchOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#ifVSwitchOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;ifVSwitchOf">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isDestInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isDestInterfaceOf">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isDestNodeOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isDestNodeOf">
+        <owl:inverseOf rdf:resource="&physicalNetOnt;hasDestNode"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isDestPortOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isDestPortOf">
+        <owl:inverseOf rdf:resource="&physicalNetOnt;hasDestPort"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isElementOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isElementOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isInterfaceOf">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isLinkOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isLinkOf">
+        <owl:inverseOf rdf:resource="&physicalNetOnt;hasLink"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isNodeOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isNodeOf">
+        <owl:inverseOf rdf:resource="&physicalNetOnt;hasNode"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isPortOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isPortOf">
+        <owl:inverseOf rdf:resource="&physicalNetOnt;hasPort"/>
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isSrcInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isSrcInterfaceOf">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isSrcNodeOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isSrcNodeOf">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#isSrcPortOf -->
+
+    <owl:ObjectProperty rdf:about="&physicalNetOnt;isSrcPortOf">
+        <rdfs:subPropertyOf rdf:resource="&physicalNetOnt;isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#active_cpus -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;active_cpus">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#bandwidth -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;bandwidth">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#cores_per_socket -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;cores_per_socket">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#cpu_frequency -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;cpu_frequency">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#cpu_sockets -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;cpu_sockets">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#dest_mac -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;dest_mac">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#disk_storage -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;disk_storage">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#dpid -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;dpid">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Node"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#flow_table_size -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;flow_table_size">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Switch"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#host_model -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;host_model">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hyper_type -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;hyper_type">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#hyper_ver -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;hyper_ver">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#ip_address -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;ip_address">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Node"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#latency -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;latency">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#link_type -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;link_type">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#loss_rate -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;loss_rate">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#memory -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;memory">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Node"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#num_ports_used -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;num_ports_used">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Switch"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#port_buffer -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;port_buffer">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Port"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#port_number -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;port_number">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Port"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#resource_id -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;resource_id">
+        <rdfs:domain rdf:resource="&physicalNetOnt;PhysicalInfra"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#resource_name -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;resource_name">
+        <rdfs:domain rdf:resource="&physicalNetOnt;PhysicalInfra"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#src_mac -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;src_mac">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Link"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#threads_per_core -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;threads_per_core">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#uri -->
+
+    <owl:DatatypeProperty rdf:about="&physicalNetOnt;uri">
+        <rdfs:domain rdf:resource="&physicalNetOnt;Host"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#Host -->
+
+    <owl:Class rdf:about="&physicalNetOnt;Host">
+        <rdfs:subClassOf rdf:resource="&physicalNetOnt;Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#Interface -->
+
+    <owl:Class rdf:about="&physicalNetOnt;Interface">
+        <rdfs:subClassOf rdf:resource="&physicalNetOnt;PhysicalInfra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#Link -->
+
+    <owl:Class rdf:about="&physicalNetOnt;Link">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&physicalNetOnt;PhysicalInfra"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&physicalNetOnt;hasDestNode"/>
+                        <owl:someValuesFrom rdf:resource="&physicalNetOnt;Node"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&physicalNetOnt;hasDestPort"/>
+                        <owl:someValuesFrom rdf:resource="&physicalNetOnt;Port"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&physicalNetOnt;hasSrcNode"/>
+                        <owl:someValuesFrom rdf:resource="&physicalNetOnt;Node"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&physicalNetOnt;hasSrcPort"/>
+                        <owl:someValuesFrom rdf:resource="&physicalNetOnt;Port"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#Node -->
+
+    <owl:Class rdf:about="&physicalNetOnt;Node">
+        <rdfs:subClassOf rdf:resource="&physicalNetOnt;PhysicalInfra"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&physicalNetOnt;hasPort"/>
+                <owl:someValuesFrom rdf:resource="&physicalNetOnt;Interface"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#PhysicalInfra -->
+
+    <owl:Class rdf:about="&physicalNetOnt;PhysicalInfra"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#Port -->
+
+    <owl:Class rdf:about="&physicalNetOnt;Port">
+        <rdfs:subClassOf rdf:resource="&physicalNetOnt;PhysicalInfra"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#Switch -->
+
+    <owl:Class rdf:about="&physicalNetOnt;Switch">
+        <rdfs:subClassOf rdf:resource="&physicalNetOnt;Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt#Topology -->
+
+    <owl:Class rdf:about="&physicalNetOnt;Topology">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&physicalNetOnt;PhysicalInfra"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&physicalNetOnt;hasLink"/>
+                        <owl:someValuesFrom rdf:resource="&physicalNetOnt;Link"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&physicalNetOnt;hasNode"/>
+                        <owl:someValuesFrom rdf:resource="&physicalNetOnt;Node"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

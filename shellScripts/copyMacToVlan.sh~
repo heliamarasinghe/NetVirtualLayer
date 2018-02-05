@@ -1,0 +1,5 @@
+#!/bin/bash
+scp MacToVlan/macToVlan1.txt openstack@192.168.0.221:~/pox/
+scp MacToVlan/macToVlan2.txt openstack@192.168.0.222:~/pox/
+scp MacToVlan/macToVlan3.txt openstack@192.168.0.223:~/pox/
+scp MacToVlan/macToVlan4.txt openstack@192.168.0.224:~/pox/

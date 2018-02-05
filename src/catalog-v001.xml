@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="http://purl.obolibrary.org/obo/TEMP" uri="ontbackup/20141028_physicalNet2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52" uri="DataFiles/IaaS_Resource_Allocation_2_ReqEdit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52" uri="DataFiles/IaaS_Resource_Allocation_2_noAlloc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52" uri="DataFiles/IaaS_Resource_Allocation_2_empty.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt" uri="ontbackup/20141023_physicalNet.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt" uri="ontbackup/20141027_physicalNet%20before%20intfs%20change.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="virtualpool.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="physicalNet2_empty.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52" uri="ontbackup/20141027_physicalNet2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52" uri="ontbackup/20141028_physicalNet2_INDL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="shadowed:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="ontbackup/20141029_physicalNet2_before%20host.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="shadowed:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="ontbackup/20141028_physicalNet2_empty.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="shadowed:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="ontbackup/20141113_physicalNet2_berore%20ResourceURI.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="shadowed:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="ontbackup/20141028_physicalNet2_INDL2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="shadowed:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="ontbackup/20141106_physicalNet2_vm%20data%20properties.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="shadowed:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="ontbackup/20141028_physicalNet2_with%20individuals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1423258096592" name="shadowed:http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt" uri="ontbackup/20141028_physicalNet2_linksadded.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,71 @@
+Time Measuring Probes
+
+//*** Code to start time measurements
+//org.flowvisor.api.handlers.ConfigurationHandler.java
+// add following imports
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public JSONRPC2Response process(JSONRPC2Request req, MessageContext ctxt) {
+		ApiHandler m = handlers.get(req.getMethod());
+		//---- Time measure code begin
+		try{
+			PrintWriter printwriter = new PrintWriter(new FileWriter("~/fvConfigCmdReceived.txt", true));
+			printwriter.println(Long.toString(System.currentTimeMillis()) +"\t"+ m.cmdName());
+			printwriter.close();
+			} catch(IOException ioEx){
+				System.err.println("org.flowvisor.api.handlers.ConfigurationHandler: File writer exception caught");
+				ioEx.printStackTrace();
+			}
+		
+		//---- Time measure code end
+		if (m != null) {
+
+
+
+
+
+//*** Code to store end of flowspace and slice creation time (time at database update)
+//org.flowvisor.config.FlowSpaceImpl.java:
+
+// add following imports
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+// Method added by heli to write into file
+public static void fvConfigDbUpdateTime(String fileWriteLine) {
+		try{
+		PrintWriter printwriter = new PrintWriter(new FileWriter("~/fvConfigDbUpdateTime.txt", true));
+		printwriter.println(fileWriteLine);
+		printwriter.close();
+		} catch(IOException ioEx){
+			System.err.println("org.flowvisor.config.FlowSpaceImpl.java: File writer exception caught");
+			ioEx.printStackTrace();
+		}
+	}
+//After adding above method, put this line after each "ps.executeUpdate()"
+//fvConfigDbUpdateTime(Long.toString(System.currentTimeMillis())+"\t methodName \t"+ps.toString());
+
+
+//**************************************Add to all text
+
+// Added imports
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+// Code added by heli to measure time between arrival of a configuration request to implementation
+		System.out.println("Printing to monitoredTime.txt from org.flowvisor.api.handlers.configuration.ListSlices.java");
+		try {
+    			PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("monitoredTime.txt", true)));
+    			out.println(Long.toString(System.currentTimeMillis()) +"\t list-slices");
+    			out.close();
+		} catch (IOException e) {
+    			System.err.println("Exception Thrown at file writing");
+		}
+		// END of code added by Heli

@@ -1,0 +1,1615 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#"
+     xml:base="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- java:java.lang.Class -->
+
+    <rdfs:Datatype rdf:about="java:java.lang.Class"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isComponentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasDestPort -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasDestPort">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isDestPortOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasInterface">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isInterfaceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasPort -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasPort">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isPortOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasSrcPort -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasSrcPort">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isSrcPortOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasVNode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasVNode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#VNode"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isVNodeOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isComponentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isDestPortOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isDestPortOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isInterfaceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isPortOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isPortOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isSrcPortOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isSrcPortOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isVNodeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isVNodeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#availableMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#availableMemory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#availableStorage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#availableStorage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#storageProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#bandwidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#bandwidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#coresPerSocket -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#coresPerSocket">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#cpuFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#cpuFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#cpuSockets -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#cpuSockets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#cpuTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#cpuTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#dataPlaneCpu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#dataPlaneCpu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#dataPlaneMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#dataPlaneMemory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#destMac -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#destMac">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#flowTableSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#flowTableSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hyperType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hyperType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hyperVer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hyperVer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ipAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ipAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#latency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#latency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#lossRate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#lossRate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#macAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#macAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#maxCpu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#maxCpu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#VNode"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#maxThroughput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#maxThroughput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeClass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#numberOfOvs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#numberOfOvs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portBuffer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portBuffer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#resourceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#resourceName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#resourceURI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#resourceURI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#sourceNetwork -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#sourceNetwork">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#srcMac -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#srcMac">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#storageProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#storageProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingSpeed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#threadsPerCore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#threadsPerCore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#totalMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#totalMemory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#totalPorts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#totalPorts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#totalStorage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#totalStorage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#storageProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#usedPorts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#usedPorts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#vCpu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#vCpu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#VNode"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#vCpuArch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#vCpuArch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#vmId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#vmId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#VNode"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Host -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Host">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NetworkElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NetworkElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NetworkElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NetworkElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NetworkElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#StorageComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#StorageComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#VNode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#VNode">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link_0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link_0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <lossRate rdf:datatype="&xsd;double">0.0</lossRate>
+        <bandwidth rdf:datatype="&xsd;double">0.0</bandwidth>
+        <latency rdf:datatype="&xsd;double">0.0</latency>
+        <linkType rdf:datatype="&xsd;double">0.0</linkType>
+        <destMac rdf:datatype="&xsd;string">00:04:f0:92:1c:3d:a7:00</destMac>
+        <srcMac rdf:datatype="&xsd;string">5e:3e:08:9e:01:93:5e:08</srcMac>
+        <resourceURI rdf:datatype="&xsd;string">Link_0</resourceURI>
+        <resourceURI rdf:datatype="&xsd;string">S_10001</resourceURI>
+        <hasSrcPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port101"/>
+        <hasDestPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port403"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <bandwidth rdf:datatype="&xsd;double">0.0</bandwidth>
+        <linkType rdf:datatype="&xsd;double">0.0</linkType>
+        <lossRate rdf:datatype="&xsd;double">0.0</lossRate>
+        <latency rdf:datatype="&xsd;double">0.0</latency>
+        <srcMac rdf:datatype="&xsd;string">00:04:f0:92:1c:3d:a7:00</srcMac>
+        <destMac rdf:datatype="&xsd;string">5e:3e:08:9e:01:93:5e:08</destMac>
+        <resourceURI rdf:datatype="&xsd;string">Link_1</resourceURI>
+        <resourceURI rdf:datatype="&xsd;string">S_10002</resourceURI>
+        <hasDestPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port101"/>
+        <hasSrcPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port403"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link"/>
+        <lossRate rdf:datatype="&xsd;double">0.0</lossRate>
+        <bandwidth rdf:datatype="&xsd;double">0.0</bandwidth>
+        <latency rdf:datatype="&xsd;double">0.0</latency>
+        <linkType rdf:datatype="&xsd;double">0.0</linkType>
+        <srcMac rdf:datatype="&xsd;string">00:00:f0:4d:a2:33:8e:7d</srcMac>
+        <destMac rdf:datatype="&xsd;string">00:04:f0:92:1c:3d:a7:00</destMac>
+        <resourceURI rdf:datatype="&xsd;string">Link_2</resourceURI>
+        <resourceURI rdf:datatype="&xsd;string">S_10003</resourceURI>
+        <hasSrcPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port301"/>
+        <hasDestPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port401"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch"/>
+        <resourceURI rdf:datatype="&xsd;string">S_100</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_1</resourceName>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_compute"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_interface"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_switching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent"/>
+        <totalMemory rdf:datatype="&xsd;double">256.0</totalMemory>
+        <cpuFrequency rdf:datatype="&xsd;double">666.0</cpuFrequency>
+        <resourceURI rdf:datatype="&xsd;string">S_100_CMP</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_1_compute</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <ipAddress rdf:datatype="&xsd;string">192.168.0.11</ipAddress>
+        <macAddress rdf:datatype="&xsd;string">5e:3e:08:9e:01:93:5e:08</macAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceURI rdf:datatype="&xsd;string">S_100_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_1_interface</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port101"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port102"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port103"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port104"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port105"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port106"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port1065534"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port107"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port108"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port109"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port110"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port111"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">1</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">101</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/1</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">102</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">2</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/2</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">103</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">3</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/3</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port104 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port104">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">104</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">4</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/4</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port105 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port105">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">105</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">5</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/5</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port106 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port106">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">106</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">6</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/6</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port1065534 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port1065534">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">1065534</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">65534</portNumber>
+        <resourceName rdf:datatype="&xsd;string">br0</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port107 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port107">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">107</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">7</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/7</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port108 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port108">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">108</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">8</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/8</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port109 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port109">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">109</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">9</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/9</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port110 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port110">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">10</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">110</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/10</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port111 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port111">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">11</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">111</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/11</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port112 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_port112">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">112</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">12</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ge-1/1/12</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_switching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_1_switching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent"/>
+        <flowTableSize rdf:datatype="&xsd;int">1000</flowTableSize>
+        <usedPorts rdf:datatype="&xsd;int">13</usedPorts>
+        <dataPlaneMemory rdf:datatype="&xsd;double">144.0</dataPlaneMemory>
+        <dataPlaneCpu rdf:datatype="&xsd;double">200.0</dataPlaneCpu>
+        <maxThroughput rdf:datatype="&xsd;double">282.1</maxThroughput>
+        <switchingSpeed rdf:datatype="&xsd;double">379.2</switchingSpeed>
+        <totalPorts rdf:datatype="&xsd;int">48</totalPorts>
+        <resourceURI rdf:datatype="&xsd;string">S_100_SWG</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_1_switching</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch"/>
+        <resourceURI rdf:datatype="&xsd;string">S_200</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_2</resourceName>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_compute"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_interface"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_switching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent"/>
+        <totalMemory rdf:datatype="&xsd;double">256.0</totalMemory>
+        <cpuFrequency rdf:datatype="&xsd;double">666.0</cpuFrequency>
+        <resourceURI rdf:datatype="&xsd;string">S_200_CMP</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_2_compute</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <macAddress rdf:datatype="&xsd;string">00:00:ce:b1:27:c2:85:43</macAddress>
+        <ipAddress rdf:datatype="&xsd;string">192.168.0.222</ipAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceURI rdf:datatype="&xsd;string">S_200_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_2_interface</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_port201"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_port202"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_port201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_port201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">1</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">201</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">vnet0</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_port202 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_port202">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">2</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">202</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">vnet1</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_switching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_2_switching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent"/>
+        <usedPorts rdf:datatype="&xsd;int">0</usedPorts>
+        <flowTableSize rdf:datatype="&xsd;int">1000</flowTableSize>
+        <dataPlaneMemory rdf:datatype="&xsd;double">144.0</dataPlaneMemory>
+        <usedPorts rdf:datatype="&xsd;int">2</usedPorts>
+        <dataPlaneCpu rdf:datatype="&xsd;double">200.0</dataPlaneCpu>
+        <maxThroughput rdf:datatype="&xsd;double">282.1</maxThroughput>
+        <switchingSpeed rdf:datatype="&xsd;double">379.2</switchingSpeed>
+        <totalPorts rdf:datatype="&xsd;int">48</totalPorts>
+        <resourceURI rdf:datatype="&xsd;string">S_200_SWG</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_2_switching</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch"/>
+        <resourceURI rdf:datatype="&xsd;string">S_300</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_3</resourceName>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_compute"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_interface"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_switching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent"/>
+        <totalMemory rdf:datatype="&xsd;double">256.0</totalMemory>
+        <cpuFrequency rdf:datatype="&xsd;double">666.0</cpuFrequency>
+        <resourceURI rdf:datatype="&xsd;string">S_300_CMP</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_3_compute</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <macAddress rdf:datatype="&xsd;string">00:00:f0:4d:a2:33:8e:7d</macAddress>
+        <ipAddress rdf:datatype="&xsd;string">192.168.0.221</ipAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceURI rdf:datatype="&xsd;string">S_300_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_3_interface</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port301"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port3065534"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port307"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port308"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port309"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port301 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port301">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">1</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">301</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">eth1</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port3065534 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port3065534">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">3065534</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">65534</portNumber>
+        <resourceName rdf:datatype="&xsd;string">ovsbr0</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port307 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port307">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">307</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">7</portNumber>
+        <resourceName rdf:datatype="&xsd;string">vnet0</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port308 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port308">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">308</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">8</portNumber>
+        <resourceName rdf:datatype="&xsd;string">vnet1</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port309 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_port309">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">309</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">9</portNumber>
+        <resourceName rdf:datatype="&xsd;string">vnet2</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_switching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_3_switching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent"/>
+        <flowTableSize rdf:datatype="&xsd;int">1000</flowTableSize>
+        <dataPlaneMemory rdf:datatype="&xsd;double">144.0</dataPlaneMemory>
+        <dataPlaneCpu rdf:datatype="&xsd;double">200.0</dataPlaneCpu>
+        <maxThroughput rdf:datatype="&xsd;double">282.1</maxThroughput>
+        <switchingSpeed rdf:datatype="&xsd;double">379.2</switchingSpeed>
+        <totalPorts rdf:datatype="&xsd;int">48</totalPorts>
+        <usedPorts rdf:datatype="&xsd;int">5</usedPorts>
+        <resourceURI rdf:datatype="&xsd;string">S_300_SWG</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_3_switching</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch"/>
+        <resourceURI rdf:datatype="&xsd;string">S_400</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_4</resourceName>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_compute"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_interface"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_switching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent"/>
+        <totalMemory rdf:datatype="&xsd;double">256.0</totalMemory>
+        <cpuFrequency rdf:datatype="&xsd;double">666.0</cpuFrequency>
+        <resourceURI rdf:datatype="&xsd;string">S_400_CMP</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_4_compute</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <macAddress rdf:datatype="&xsd;string">00:04:f0:92:1c:3d:a7:00</macAddress>
+        <ipAddress rdf:datatype="&xsd;string">192.168.0.12</ipAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceURI rdf:datatype="&xsd;string">S_400_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_4_interface</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port401"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port403"/>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port4065534"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port401 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port401">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">1</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">401</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">A1</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port403 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port403">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <portNumber rdf:datatype="&xsd;int">3</portNumber>
+        <resourceURI rdf:datatype="&xsd;string">403</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">A3</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port4065534 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_port4065534">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <portBuffer rdf:datatype="&xsd;double">0.0</portBuffer>
+        <resourceURI rdf:datatype="&xsd;string">4065534</resourceURI>
+        <portNumber rdf:datatype="&xsd;int">65534</portNumber>
+        <resourceName rdf:datatype="&xsd;string">local</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_switching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch_4_switching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent"/>
+        <flowTableSize rdf:datatype="&xsd;int">1000</flowTableSize>
+        <dataPlaneMemory rdf:datatype="&xsd;double">144.0</dataPlaneMemory>
+        <dataPlaneCpu rdf:datatype="&xsd;double">200.0</dataPlaneCpu>
+        <maxThroughput rdf:datatype="&xsd;double">282.1</maxThroughput>
+        <usedPorts rdf:datatype="&xsd;int">3</usedPorts>
+        <switchingSpeed rdf:datatype="&xsd;double">379.2</switchingSpeed>
+        <totalPorts rdf:datatype="&xsd;int">48</totalPorts>
+        <resourceURI rdf:datatype="&xsd;string">S_400_SWG</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">Switch_4_switching</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Host"/>
+        <resourceName rdf:datatype="&xsd;string">kvm-host1</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.221/system</resourceURI>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_compute"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_eth0_interface"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_lo_interface"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_ovsbr0_interface"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_storage"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_switching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent"/>
+        <cpuSockets rdf:datatype="&xsd;int">1</cpuSockets>
+        <threadsPerCore rdf:datatype="&xsd;int">1</threadsPerCore>
+        <coresPerSocket rdf:datatype="&xsd;int">2</coresPerSocket>
+        <availableMemory rdf:datatype="&xsd;double">2.1338112E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.27971072E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.28569088E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.29797888E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.30129664E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.6028032E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.60501504E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.607104E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.61259264E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.61844992E8</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">2.63471104E8</availableMemory>
+        <hyperVer rdf:datatype="&xsd;int">2000000</hyperVer>
+        <cpuFrequency rdf:datatype="&xsd;int">2992</cpuFrequency>
+        <totalMemory rdf:datatype="&xsd;double">3943172.0</totalMemory>
+        <hyperType rdf:datatype="&xsd;string">QEMU</hyperType>
+        <nodeClass rdf:datatype="java:java.lang.Class">class com.imaginelab.sdnvn.datacontainers.VmHost</nodeClass>
+        <resourceName rdf:datatype="&xsd;string">kvm-host1_compute</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.221/system_CMP</resourceURI>
+        <nodeModel rdf:datatype="&xsd;string">x86_64</nodeModel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_eth0_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_eth0_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <macAddress rdf:datatype="&xsd;string">00:e0:18:7e:fe:aa</macAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceName rdf:datatype="&xsd;string">eth0</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host1_eth0_INTFS</resourceURI>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_eth0_port"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_eth0_port -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_eth0_port">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host1_eth0_PORT</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">kvm-host1_eth0port</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_lo_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_lo_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <macAddress rdf:datatype="&xsd;string">00:00:00:00:00:00</macAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host1_lo_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">lo</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_lo_port"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_lo_port -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_lo_port">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host1_lo_PORT</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">kvm-host1_loport</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_ovsbr0_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_ovsbr0_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <macAddress rdf:datatype="&xsd;string">f0:4d:a2:33:8e:7d</macAddress>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host1_ovsbr0_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">ovsbr0</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_ovsbr0_port"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_ovsbr0_port -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_ovsbr0_port">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host1_ovsbr0_PORT</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">kvm-host1_ovsbr0port</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#StorageComponent"/>
+        <availableStorage rdf:datatype="&xsd;double">200.1</availableStorage>
+        <totalStorage rdf:datatype="&xsd;double">500.1</totalStorage>
+        <resourceName rdf:datatype="&xsd;string">kvm-host1_storage</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.221/system_STO</resourceURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_switching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host1_switching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent"/>
+        <numberOfOvs rdf:datatype="&xsd;int">1</numberOfOvs>
+        <usedPorts rdf:datatype="&xsd;int">3</usedPorts>
+        <resourceName rdf:datatype="&xsd;string">kvm-host1_switching</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.221/system_SWG</resourceURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Host"/>
+        <resourceName rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.222/system</resourceURI>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_compute"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_lo_interface"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_ovsbr0_interface"/>
+        <hasInterface rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_p3p1_interface"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_storage"/>
+        <hasComponent rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_switching"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent"/>
+        <threadsPerCore rdf:datatype="&xsd;int">1</threadsPerCore>
+        <cpuSockets rdf:datatype="&xsd;int">1</cpuSockets>
+        <cpuFrequency rdf:datatype="&xsd;int">1600</cpuFrequency>
+        <cpuFrequency rdf:datatype="&xsd;int">1800</cpuFrequency>
+        <hyperVer rdf:datatype="&xsd;int">2000000</hyperVer>
+        <availableMemory rdf:datatype="&xsd;double">3.0808276992E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.1028707328E10</availableMemory>
+        <totalMemory rdf:datatype="&xsd;double">3.2918392E7</totalMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.29556992E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.2960131072E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.2960749568E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.2967172096E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.2967204864E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.296724992E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.29672704E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.2967716864E10</availableMemory>
+        <availableMemory rdf:datatype="&xsd;double">3.2967794688E10</availableMemory>
+        <cpuFrequency rdf:datatype="&xsd;int">3101</cpuFrequency>
+        <coresPerSocket rdf:datatype="&xsd;int">4</coresPerSocket>
+        <hyperType rdf:datatype="&xsd;string">QEMU</hyperType>
+        <nodeClass rdf:datatype="java:java.lang.Class">class com.imaginelab.sdnvn.datacontainers.VmHost</nodeClass>
+        <resourceName rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_compute</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.222/system_CMP</resourceURI>
+        <nodeModel rdf:datatype="&xsd;string">x86_64</nodeModel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_lo_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_lo_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <macAddress rdf:datatype="&xsd;string">00:00:00:00:00:00</macAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_lo_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">lo</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_lo_port"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_lo_port -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_lo_port">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_lo_PORT</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_loport</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_ovsbr0_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_ovsbr0_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <macAddress rdf:datatype="&xsd;string">d4:ae:52:d2:1a:14</macAddress>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_ovsbr0_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">ovsbr0</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_ovsbr0_port"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_ovsbr0_port -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_ovsbr0_port">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_ovsbr0_PORT</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_ovsbr0port</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_p3p1_interface -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_p3p1_interface">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface"/>
+        <macAddress rdf:datatype="&xsd;string">90:e2:ba:64:91:dc</macAddress>
+        <interfaceType rdf:datatype="&xsd;string">Ethernet</interfaceType>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_p3p1_INTFS</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">p3p1</resourceName>
+        <hasPort rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_p3p1_port"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_p3p1_port -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_p3p1_port">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port"/>
+        <resourceURI rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_p3p1_PORT</resourceURI>
+        <resourceName rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_p3p1port</resourceName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#StorageComponent"/>
+        <availableStorage rdf:datatype="&xsd;double">200.1</availableStorage>
+        <totalStorage rdf:datatype="&xsd;double">500.1</totalStorage>
+        <resourceName rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_storage</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.222/system_STO</resourceURI>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_switching -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#kvm-host2.imaginelab.openstack_switching">
+        <rdf:type rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent"/>
+        <numberOfOvs rdf:datatype="&xsd;int">1</numberOfOvs>
+        <usedPorts rdf:datatype="&xsd;int">3</usedPorts>
+        <resourceName rdf:datatype="&xsd;string">kvm-host2.imaginelab.openstack_switching</resourceName>
+        <resourceURI rdf:datatype="&xsd;string">qemu+ssh://openstack@192.168.100.222/system_SWG</resourceURI>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

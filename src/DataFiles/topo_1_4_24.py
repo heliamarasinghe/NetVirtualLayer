@@ -1,0 +1,142 @@
+#!/usr/bin/python
+
+"""
+Create a network with open ethernet ports to connect 24 external hosts that are in the form of VMs
+
+scp /home/openstack/workspace/NetVirtualLayer/src/DataFiles/topo_1_4_24.py openstack@192.168.0.228:~/
+"""
+import re
+import sys
+from mininet.cli import CLI
+from mininet.log import setLogLevel, info, error
+from mininet.node import OVSSwitch, RemoteController
+from mininet.topolib import TreeNet
+from mininet.net import Mininet
+from mininet.topolib import TreeTopo
+from mininet.util import quietRun
+from mininet.link import Intf
+
+
+# Method to connect data network hardware interface (e.g. em2) to root switch
+def checkIntf( intf ):
+    "Make sure intf exists and is not configured."
+    if ( ' %s:' % intf ) not in quietRun( 'ip link show' ):
+        error( 'Error:', intf, 'does not exist!\n' )
+        exit( 1 )
+    ips = re.findall( r'\d+\.\d+\.\d+\.\d+', quietRun( 'ifconfig ' + intf ) )
+    if ips:
+        error( 'Error:', intf, 'has an IP address and is probably in use!\n' )
+        exit( 1 )
+
+def addEth10(switch):
+    switch.cmd('ip tuntap add mode tap %s-eth10' %(switch)) 
+    switch.cmd('ip link set %s-eth10 up' %(switch)) 
+    switch.cmd('ovs-vsctl add-port %s %s-eth10' %(switch, switch))  
+
+def addEth11(switch):
+    switch.cmd('ip tuntap add mode tap %s-eth11' %(switch)) 
+    switch.cmd('ip link set %s-eth11 up' %(switch)) 
+    switch.cmd('ovs-vsctl add-port %s %s-eth11' %(switch, switch))  
+
+def addEth12(switch):
+    switch.cmd('ip tuntap add mode tap %s-eth12' %(switch)) 
+    switch.cmd('ip link set %s-eth12 up' %(switch)) 
+    switch.cmd('ovs-vsctl add-port %s %s-eth12' %(switch, switch))  
+
+def addEth13(switch):
+    switch.cmd('ip tuntap add mode tap %s-eth13' %(switch)) 
+    switch.cmd('ip link set %s-eth13 up' %(switch)) 
+    switch.cmd('ovs-vsctl add-port %s %s-eth13' %(switch, switch))  
+
+def addEth14(switch):
+    switch.cmd('ip tuntap add mode tap %s-eth14' %(switch)) 
+    switch.cmd('ip link set %s-eth14 up' %(switch)) 
+    switch.cmd('ovs-vsctl add-port %s %s-eth14' %(switch, switch))  
+
+def addEth15(switch):
+    switch.cmd('ip tuntap add mode tap %s-eth15' %(switch)) 
+    switch.cmd('ip link set %s-eth15 up' %(switch)) 
+    switch.cmd('ovs-vsctl add-port %s %s-eth15' %(switch, switch))  
+
+
+
+def phyNet():
+
+    info( '*** Creating Network\n' )
+    net = Mininet( topo=None, build=False)
+
+    info( '*** Adding Controller\n' )
+    flowvisor = net.addController(name='flowvisor', controller=RemoteController, ip='192.168.0.200', port=6633)
+
+    info( '***  Adding the core switch\n' )
+    s99 = net.addSwitch( 's99', dpid='0000000100000099')
+
+    info( '*** Adding Physical Access Switches\n' )
+    s75  = net.addSwitch( 's75', dpid='0000000200000075')
+    s76  = net.addSwitch( 's76', dpid='0000000200000076')
+    s77  = net.addSwitch( 's77', dpid='0000000200000077')
+    s78  = net.addSwitch( 's78', dpid='0000000200000078')
+
+    # Adding Virtual Access Switches
+    #switch  = net.addSwitch( 's1', listenPort=6633,  dpid="0000000000000001")
+    #switch  = net.addSwitch( 's2', listenPort=6633,  dpid="0000000000000002")
+    #switch  = net.addSwitch( 's3', listenPort=6633,  dpid="0000000000000003")
+    #switch  = net.addSwitch( 's4', listenPort=6633,  dpid="0000000000000004")
+    #switch  = net.addSwitch( 's5', listenPort=6633,  dpid="0000000000000005")
+    #switch  = net.addSwitch( 's6', listenPort=6633,  dpid="0000000000000006")
+    #switch  = net.addSwitch( 's7', listenPort=6633,  dpid="0000000000000007")
+    #switch  = net.addSwitch( 's8', listenPort=6633,  dpid="0000000000000008")
+    #switch  = net.addSwitch( 's9', listenPort=6633,  dpid="0000000000000009")
+
+    info( '*** Adding hosts\n' )
+    h1 = net.addHost( 'h1', mac='01:00:00:00:01:01', ip='192.168.100.199/24' )
+    h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.100.198/24' )
+    #h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.0.102/24' )
+    #h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.0.102/24' )
+    #h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.0.102/24' )
+    #h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.0.102/24' )
+    #h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.0.102/24' )
+    #h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.0.102/24' )
+    #h2 = net.addHost( 'h2', mac='01:00:00:00:01:02', ip='192.168.0.102/24' )
+
+    # Adding links
+    info( '*** Adding links\n' )
+    net.addLink(s99, s75)
+    net.addLink(s99, s76)   
+    net.addLink(s99, s77)
+    net.addLink(s99, s78)
+    net.addLink(s75, h1)
+    net.addLink(s76, h2)
+    
+    #info( '*** Connecting Physical data interface to root switch\n' )
+    ## try to get hw intf from the command line; by default, use eth1
+    #intfName = sys.argv[ 1 ] if len( sys.argv ) > 1 else 'em2'
+    #info( '*** Connecting to hw intf: %s' % intfName )
+    #info( '*** Checking', intfName, '\n' )
+    #checkIntf( intfName )
+    #info( '*** Adding hardware interface', intfName, 'to switch s99 \n' )
+    #_intf = Intf( intfName, node=s99 )
+    #info( '*** Note: you may need to reconfigure the interfaces for the Mininet hosts:\n', net.hosts, '\n' )
+
+    info('*** Starting Network\n')
+    net.start()
+
+    info( '*** Adding interfaces to access layer switches to connect external hosts\n' )
+    for switch in s75, s76, s77, s78: 
+        addEth10(switch)
+        addEth11(switch)
+        addEth12(switch)
+        addEth13(switch)
+        addEth14(switch)
+        addEth15(switch)
+        switch.cmd('ovs-vsctl set-fail-mode %s standalone' %(switch)) 
+
+    s99.cmd('ovs-vsctl add-port s99 em2')
+
+    CLI(net)
+    net.stop()
+
+if __name__ == '__main__':
+    setLogLevel( 'info' )
+    phyNet()
+    

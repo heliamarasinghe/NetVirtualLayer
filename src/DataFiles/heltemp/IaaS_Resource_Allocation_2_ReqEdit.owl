@@ -1,0 +1,1332 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ace_lexicon "http://attempto.ifi.uzh.ch/ace_lexicon#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#"
+     xml:base="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#CN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;CN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#PN_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;PN_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_pl -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_pl"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_sg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_sg"/>
+    
+
+
+    <!-- http://attempto.ifi.uzh.ch/ace_lexicon#TV_vbg -->
+
+    <owl:AnnotationProperty rdf:about="&ace_lexicon;TV_vbg"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Own_Resource -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Own_Resource">
+        <ace_lexicon:TV_pl>Own_Resource</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>Own_Resources</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>Own_Resourced</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Provider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Resources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#connectedto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#connectedto">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <ace_lexicon:TV_vbg>connectedtoed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>connectedtoes</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>connectedto</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#contains">
+        <ace_lexicon:TV_pl>contains</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>containsed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>containses</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasConstraints -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasConstraints">
+        <ace_lexicon:TV_vbg>hasConstraintsed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasConstraintses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasConstraints</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Request"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#RequestConstraints"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#has_capacity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#has_capacity">
+        <ace_lexicon:TV_sg>has_capacities</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>has_capacitied</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>has_capacity</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceCapacity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#has_state -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#has_state">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>has_stated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>has_state</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>has_states</ace_lexicon:TV_sg>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceState"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasfunctional_P -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasfunctional_P">
+        <ace_lexicon:TV_vbg>hasfunctional_Ped</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>hasfunctional_Ps</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>hasfunctional_P</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasparameters"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasinterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasinterface">
+        <ace_lexicon:TV_pl>hasinterface</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasinterfaces</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasinterfaced</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Resources"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasnonfunctional_P -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasnonfunctional_P">
+        <ace_lexicon:TV_vbg>hasnonfunctional_Ped</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasnonfunctional_P</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>hasnonfunctional_Ps</ace_lexicon:TV_sg>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasparameters"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasparameters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasparameters">
+        <ace_lexicon:TV_sg>hasparameterses</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasparametersed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hasparameters</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Resources"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#haspriority -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#haspriority">
+        <ace_lexicon:TV_pl>haspriority</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>haspriorities</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hasprioritied</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#priority"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hosted_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hosted_in">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>hosteds_in</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>hosteded_in</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>hosted_in</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provideservice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provideservice">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>provideservices</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>provideserviced</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>provideservice</ace_lexicon:TV_pl>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Services"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Read_Write_storage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Read_Write_storage">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>Read_Write_storaged</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>Read_Write_storages</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>Read_Write_storage</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VMM -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VMM">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>VMM</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>VMMs</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>VMMed</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#arrivalTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#arrivalTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#bw -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#bw">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>bws</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>bwed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>bw</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#cpu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#cpu">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>cpu</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>cpus</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>cpued</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#delay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#delay">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>delayed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>delay</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>delays</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#location">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>locations</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>locationed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>location</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#loss_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#loss_rate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>loss_rate</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>loss_rated</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>loss_rates</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#memory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#memory">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>memories</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>memory</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>memoried</ace_lexicon:TV_vbg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#minReqDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#minReqDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#n_cores -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#n_cores">
+        <ace_lexicon:TV_vbg>n_coresed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>n_cores</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>n_coreses</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#platform -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#platform">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>platformed</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>platforms</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_pl>platform</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#randMax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#randMax">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#reqDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#reqDuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#reqId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#reqId">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#reqtLifeTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#reqtLifeTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#res_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#res_id">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_pl>res_id</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_vbg>res_ided</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_sg>res_ids</ace_lexicon:TV_sg>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#status">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#iaasRequestProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_vbg>storaged</ace_lexicon:TV_vbg>
+        <ace_lexicon:CN_sg>storage</ace_lexicon:CN_sg>
+        <ace_lexicon:TV_pl>storage</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>storages</ace_lexicon:TV_sg>
+        <ace_lexicon:CN_pl>storages</ace_lexicon:CN_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#stress_level -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#stress_level">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <ace_lexicon:TV_sg>stress_levels</ace_lexicon:TV_sg>
+        <ace_lexicon:TV_vbg>stress_leveled</ace_lexicon:TV_vbg>
+        <ace_lexicon:TV_pl>stress_level</ace_lexicon:TV_pl>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#interface"/>
+        <ace_lexicon:CN_pl>ATMs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ATM</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Accepted_Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Accepted_Request">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Request"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#AllocatedResources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#AllocatedResources">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#has_state"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#allocated"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_sg>AllocatedResources</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>AllocatedResourceses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Class_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Class_A">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#haspriority"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_A"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_sg>Class_A</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Class_As</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Class_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Class_B">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#haspriority"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_B"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_pl>Class_Bs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Class_B</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Class_C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Class_C">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#haspriority"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_C"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_sg>Class_C</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Class_Cs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Compute_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Compute_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Services"/>
+        <ace_lexicon:CN_sg>Compute_service</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Compute_services</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Description">
+        <ace_lexicon:CN_sg>Description</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Descriptions</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ethernet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ethernet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#interface"/>
+        <ace_lexicon:CN_sg>Ethernet</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Ethernets</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#FreeResources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#FreeResources">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#has_state"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#free"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_sg>FreeResources</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>FreeResourceses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Provider">
+        <ace_lexicon:CN_sg>IaaS_Provider</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>IaaS_Providers</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Request">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#contains"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasConstraints"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#RequestConstraints"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <ace_lexicon:CN_sg>IaaS_Request</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>IaaS_Requests</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#MiddleBox -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#MiddleBox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Services"/>
+        <ace_lexicon:CN_sg>MiddleBox</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>MiddleBoxes</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Optical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Optical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#interface"/>
+        <ace_lexicon:CN_pl>Opticals</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Optical</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Resources"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_pl>PRs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>PR</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Rejected_Request -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Rejected_Request">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Request"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#RequestConstraints -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#RequestConstraints">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P"/>
+        <ace_lexicon:CN_sg>RequestConstraints</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>RequestConstraintses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResidualCapacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResidualCapacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceCapacity"/>
+        <ace_lexicon:CN_pl>ResidualCapacities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>ResidualCapacity</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceCapacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceCapacity">
+        <ace_lexicon:CN_sg>ResourceCapacity</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>ResourceCapacities</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceState">
+        <ace_lexicon:CN_sg>ResourceState</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>ResourceStates</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Resources">
+        <ace_lexicon:CN_sg>Resources</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>Resourceses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Services -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Services">
+        <ace_lexicon:CN_pl>Serviceses</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>Services</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#TotalCapacity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#TotalCapacity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceCapacity"/>
+        <ace_lexicon:CN_pl>TotalCapacities</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>TotalCapacity</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasnonfunctional_P"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasparameters"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#hasfunctional_P"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Resources"/>
+        <ace_lexicon:CN_pl>VRs</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>VR</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#allocated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#allocated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceState"/>
+        <ace_lexicon:CN_pl>allocateds</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>allocated</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#priority"/>
+        <ace_lexicon:CN_sg>class_A</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>class_As</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#priority"/>
+        <ace_lexicon:CN_sg>class_B</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>class_Bs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#priority"/>
+        <ace_lexicon:CN_sg>class_C</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>class_Cs</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#compute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#compute">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provideservice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Compute_service"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provideservice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#MiddleBox"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_sg>compute</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>computes</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#free -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#free">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ResourceState"/>
+        <ace_lexicon:CN_pl>frees</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>free</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#functional_P">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters"/>
+        <ace_lexicon:CN_pl>functional_Ps</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>functional_P</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#interface">
+        <ace_lexicon:CN_sg>interface</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>interfaces</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#network">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provideservice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#MiddleBox"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provideservice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#switching"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:CN_sg>network</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>networks</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#nonfunctional_P">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters"/>
+        <ace_lexicon:CN_pl>nonfunctional_Ps</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>nonfunctional_P</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#parameters">
+        <ace_lexicon:CN_sg>parameters</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>parameterses</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#priority -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#priority">
+        <ace_lexicon:CN_sg>priority</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>priorities</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provideservice"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage_service"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR"/>
+        <ace_lexicon:TV_vbg>storaged</ace_lexicon:TV_vbg>
+        <ace_lexicon:CN_sg>storage</ace_lexicon:CN_sg>
+        <ace_lexicon:TV_pl>storage</ace_lexicon:TV_pl>
+        <ace_lexicon:TV_sg>storages</ace_lexicon:TV_sg>
+        <ace_lexicon:CN_pl>storages</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage_service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage_service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Services"/>
+        <ace_lexicon:CN_pl>storage_services</ace_lexicon:CN_pl>
+        <ace_lexicon:CN_sg>storage_service</ace_lexicon:CN_sg>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#switching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#switching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Services"/>
+        <ace_lexicon:CN_sg>switching</ace_lexicon:CN_sg>
+        <ace_lexicon:CN_pl>switchings</ace_lexicon:CN_pl>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM"/>
+        <ace_lexicon:PN_sg>ATM1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#ATM"/>
+        <ace_lexicon:PN_sg>ATM2</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ethernet"/>
+        <bw rdf:datatype="&xsd;double">10.0</bw>
+        <delay rdf:datatype="&xsd;double">30.0</delay>
+        <loss_rate rdf:datatype="&xsd;double">5.0</loss_rate>
+        <ace_lexicon:PN_sg>Ether1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ethernet"/>
+        <loss_rate rdf:datatype="&xsd;double">10.0</loss_rate>
+        <bw rdf:datatype="&xsd;double">50.0</bw>
+        <delay rdf:datatype="&xsd;double">50.0</delay>
+        <ace_lexicon:PN_sg>Ether2</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ethernet"/>
+        <delay rdf:datatype="&xsd;double">10.0</delay>
+        <loss_rate rdf:datatype="&xsd;double">10.0</loss_rate>
+        <bw rdf:datatype="&xsd;double">100.0</bw>
+        <ace_lexicon:PN_sg>Ether3</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR"/>
+        <location rdf:datatype="&xsd;string">Rack1</location>
+        <ace_lexicon:PN_sg>PR1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR"/>
+        <location rdf:datatype="&xsd;string">Rack2</location>
+        <ace_lexicon:PN_sg>PR2</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR"/>
+        <location rdf:datatype="&xsd;string">Rack3</location>
+        <ace_lexicon:PN_sg>PR3</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR1">
+        <cpu rdf:datatype="&xsd;double">1.0</cpu>
+        <memory rdf:datatype="&xsd;double">300.0</memory>
+        <storage rdf:datatype="&xsd;double">500.0</storage>
+        <location rdf:datatype="&xsd;string">Rack1</location>
+        <ace_lexicon:PN_sg>VR1</ace_lexicon:PN_sg>
+        <hasinterface rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether1"/>
+        <hosted_in rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR1"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR10">
+        <ace_lexicon:PN_sg>VR10</ace_lexicon:PN_sg>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR11">
+        <ace_lexicon:PN_sg>VR11</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR12">
+        <ace_lexicon:PN_sg>VR12</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR13">
+        <ace_lexicon:PN_sg>VR13</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR14">
+        <ace_lexicon:PN_sg>VR14</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR2">
+        <cpu rdf:datatype="&xsd;double">2.0</cpu>
+        <memory rdf:datatype="&xsd;double">200.0</memory>
+        <storage rdf:datatype="&xsd;double">400.0</storage>
+        <location rdf:datatype="&xsd;string">Rack2</location>
+        <ace_lexicon:PN_sg>VR2</ace_lexicon:PN_sg>
+        <hasinterface rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether2"/>
+        <hosted_in rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR2"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR10"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR3">
+        <cpu rdf:datatype="&xsd;double">2.0</cpu>
+        <memory rdf:datatype="&xsd;double">400.0</memory>
+        <storage rdf:datatype="&xsd;double">750.0</storage>
+        <location rdf:datatype="&xsd;string">Rack3</location>
+        <ace_lexicon:PN_sg>VR3</ace_lexicon:PN_sg>
+        <hasinterface rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether3"/>
+        <hosted_in rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR3"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR12"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR4">
+        <cpu rdf:datatype="&xsd;double">1.0</cpu>
+        <storage rdf:datatype="&xsd;double">1000.0</storage>
+        <memory rdf:datatype="&xsd;double">256.0</memory>
+        <location rdf:datatype="&xsd;string">Rack3</location>
+        <ace_lexicon:PN_sg>VR4</ace_lexicon:PN_sg>
+        <hasinterface rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether1"/>
+        <hosted_in rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR3"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR5"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR5">
+        <location rdf:datatype="&xsd;string">Rack3</location>
+        <ace_lexicon:PN_sg>VR5</ace_lexicon:PN_sg>
+        <hasinterface rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Ether2"/>
+        <hosted_in rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR3"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR7"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR6">
+        <location rdf:datatype="&xsd;string">Rack2</location>
+        <ace_lexicon:PN_sg>VR6</ace_lexicon:PN_sg>
+        <hosted_in rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR2"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR7">
+        <ace_lexicon:PN_sg>VR7</ace_lexicon:PN_sg>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR8">
+        <ace_lexicon:PN_sg>VR8</ace_lexicon:PN_sg>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR13"/>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR9"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR9">
+        <ace_lexicon:PN_sg>VR9</ace_lexicon:PN_sg>
+        <connectedto rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#VR14"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#allocated1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#allocated1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#allocated"/>
+        <ace_lexicon:PN_sg>allocated1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_a">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_A"/>
+        <ace_lexicon:PN_sg>class_a</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_B"/>
+        <ace_lexicon:PN_sg>class_b</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_c">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#class_C"/>
+        <ace_lexicon:PN_sg>class_c</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#compute1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#compute1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Compute_service"/>
+        <ace_lexicon:PN_sg>compute1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#free1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#free1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#free"/>
+        <ace_lexicon:PN_sg>free1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#middle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#middle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#MiddleBox"/>
+        <ace_lexicon:PN_sg>middle1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#network1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#network1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#switching"/>
+        <ace_lexicon:PN_sg>network1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#optical1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#optical1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Optical"/>
+        <ace_lexicon:PN_sg>optical1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#optical2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#optical2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#Optical"/>
+        <ace_lexicon:PN_sg>optical2</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provider1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#provider1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#IaaS_Provider"/>
+        <ace_lexicon:PN_sg>provider1</ace_lexicon:PN_sg>
+        <Own_Resource rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR1"/>
+        <Own_Resource rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR2"/>
+        <Own_Resource rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#PR3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kmetw028/ontologies/2013/11/untitled-ontology-52#storage_service"/>
+        <ace_lexicon:PN_sg>storage1</ace_lexicon:PN_sg>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

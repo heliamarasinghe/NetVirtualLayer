@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><domain type="kvm">
+  <name>REQ-93_H-21_VM-4</name>
+  <uuid>8824f3c7-c220-4597-92b8-c8f0750aae6e</uuid>
+  <memory unit="KiB">1048576</memory>
+  <currentMemory unit="KiB">1048576</currentMemory>
+  <vcpu placement="static">1</vcpu>
+  <os>
+    <type arch="x86_64" machine="pc-i440fx-trusty">hvm</type>
+    <boot dev="cdrom"/>
+  </os>
+  <features>
+    <acpi/>
+    <apic/>
+    <pae/>
+  </features>
+  <clock offset="utc"/>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>restart</on_crash>
+  <devices>
+    <emulator>/usr/bin/kvm-spice</emulator>
+    <disk device="disk" type="file">
+      <driver name="qemu" type="raw"/>
+      <source file="/var/lib/libvirt/images/REQ-93_H-21_VM-4.img"/>
+      <target bus="virtio" dev="vda"/>
+      <address bus="0x00" domain="0x0000" function="0x0" slot="0x05" type="pci"/>
+    </disk>
+    <disk device="cdrom" type="file">
+      <driver name="qemu" type="raw"/>
+      <source file="/var/lib/libvirt/images/lubuntu-14.04.2-desktop-i386.iso"/>
+      <target bus="ide" dev="hdc"/>
+      <readonly/>
+      <address bus="1" controller="0" target="0" type="drive" unit="0"/>
+    </disk>
+    <controller index="0" type="usb">
+      <address bus="0x00" domain="0x0000" function="0x2" slot="0x01" type="pci"/>
+    </controller>
+    <controller index="0" model="pci-root" type="pci"/>
+    <controller index="0" type="ide">
+      <address bus="0x00" domain="0x0000" function="0x1" slot="0x01" type="pci"/>
+    </controller>
+    <interface type="bridge">
+     <virtualport type="openvswitch"/>
+      <mac address="6c:d5:bb:93:41:f9"/>
+      <source bridge="ovsbr0"/>
+      <target dev="toH-21_VM-4"/>
+	<vlan>
+        <tag id="1093"/>
+      </vlan>
+      <model type="virtio"/>
+      <address bus="0x00" domain="0x0000" function="0x0" slot="0x03" type="pci"/>
+    </interface>
+    <serial type="pty">
+      <target port="0"/>
+    </serial>
+    <console type="pty">
+      <target port="0" type="serial"/>
+    </console>
+    <input bus="ps2" type="mouse"/>
+    <input bus="ps2" type="keyboard"/>
+    <graphics autoport="yes" port="-1" type="vnc"/>
+    <sound model="ich6">
+      <address bus="0x00" domain="0x0000" function="0x0" slot="0x04" type="pci"/>
+    </sound>
+    <video>
+      <model heads="1" type="cirrus" vram="9216"/>
+      <address bus="0x00" domain="0x0000" function="0x0" slot="0x02" type="pci"/>
+    </video>
+    <memballoon model="virtio">
+      <address bus="0x00" domain="0x0000" function="0x0" slot="0x06" type="pci"/>
+    </memballoon>
+  </devices>
+</domain>

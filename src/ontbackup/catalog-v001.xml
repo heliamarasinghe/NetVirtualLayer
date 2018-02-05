@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1414542288147" name="http://purl.obolibrary.org/obo/TEMP" uri="20141028_physicalNet2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1414542288147" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt" uri="20141023_physicalNet.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1414542288147" name="duplicate:http://www.semanticweb.org/root/ontologies/2014/7/physicalNetOnt" uri="20141027_physicalNet%20before%20intfs%20change.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1414542288147" name="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52" uri="20141027_physicalNet2.owl"/>
+    </group>
+</catalog>

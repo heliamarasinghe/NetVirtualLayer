@@ -1,0 +1,584 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#"
+     xml:base="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasComponent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NodeComponent"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isComponentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasDestPort -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasDestPort">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Link"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isDestPortOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasElement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasElement">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasInterface -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasInterface">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Interface"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isInterfaceOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasPort -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasPort">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Interface"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isPortOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasSrcPort -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasSrcPort">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Link"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hasElement"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isSrcPortOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isComponentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isComponentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isDestPortOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isDestPortOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isInterfaceOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isInterfaceOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isPortOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isPortOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isSrcPortOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isSrcPortOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#isElementOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#availableMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#availableMemory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#availableStorage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#availableStorage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#storageProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#bandwidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#bandwidth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#coresPerSocket -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#coresPerSocket">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#cpuFrequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#cpuFrequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#cpuSockets -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#cpuSockets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#dataPlaneCpu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#dataPlaneCpu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#dataPlaneMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#dataPlaneMemory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#flowTableSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#flowTableSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hyperType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hyperType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hyperVer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#hyperVer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#interfaceProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#interfaceProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#interfaceType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#interfaceType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Interface"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#interfaceProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#ipAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#ipAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Interface"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#interfaceProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#latency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#latency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Link"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#linkProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#linkProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#linkProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#macAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#macAddress">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Interface"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#interfaceProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#maxThroughput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#maxThroughput">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeClass -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeClass">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portBuffer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portBuffer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Port"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#portProperties"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#resourceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#resourceName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#PhysicalInfrastructure"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#resourceURI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#resourceURI">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#PhysicalInfrastructure"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#storageProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#storageProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#nodeProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingSpeed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#threadsPerCore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#threadsPerCore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#totalMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#totalMemory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#computeProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#totalPorts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#totalPorts">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#totalStorage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#totalStorage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#storageProperties"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#usedPorts -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#usedPorts">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#switchingProperties"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#ComputeComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#ComputeComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NodeComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Host -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Host">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Interface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Interface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NetworkElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Link -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Link">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NetworkElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NetworkElement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NetworkElement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#PhysicalInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#PhysicalInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NodeComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NodeComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#PhysicalInfrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#PhysicalInfrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#PhysicalInfrastructure"/>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Port -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Port">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NetworkElement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#StorageComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#StorageComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NodeComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Switch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Switch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#SwitchingComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#SwitchingComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/root/ontologies/2014/9/untitled-ontology-52#NodeComponent"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

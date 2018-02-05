@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl2 "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#&lt;" >
+    <!ENTITY oboInOwl3 "http://www.geneontology.org/formats/oboInOwl#&lt;/" >
+    <!ENTITY xmlns "http://www.geneontology.org/formats/oboInOwl#xmlns=&quot;" >
+    <!ENTITY usedPorts "http://www.geneontology.org/formats/oboInOwl#&lt;usedPorts " >
+    <!ENTITY ipAddress "http://www.geneontology.org/formats/oboInOwl#&lt;ipAddress " >
+    <!ENTITY totalPorts "http://www.geneontology.org/formats/oboInOwl#&lt;totalPorts " >
+    <!ENTITY macAddress "http://www.geneontology.org/formats/oboInOwl#&lt;macAddress " >
+    <!ENTITY resourceURI "http://www.geneontology.org/formats/oboInOwl#&lt;resourceURI " >
+    <!ENTITY totalMemory "http://www.geneontology.org/formats/oboInOwl#&lt;totalMemory " >
+    <!ENTITY resourceName "http://www.geneontology.org/formats/oboInOwl#&lt;resourceName " >
+    <!ENTITY hasComponent "http://www.geneontology.org/formats/oboInOwl#&lt;hasComponent " >
+    <!ENTITY cpuFrequency "http://www.geneontology.org/formats/oboInOwl#&lt;cpuFrequency " >
+    <!ENTITY hasInterface "http://www.geneontology.org/formats/oboInOwl#&lt;hasInterface " >
+    <!ENTITY dataPlaneCpu "http://www.geneontology.org/formats/oboInOwl#&lt;dataPlaneCpu " >
+    <!ENTITY flowTableSize "http://www.geneontology.org/formats/oboInOwl#&lt;flowTableSize " >
+    <!ENTITY interfaceType "http://www.geneontology.org/formats/oboInOwl#&lt;interfaceType " >
+    <!ENTITY maxThroughput "http://www.geneontology.org/formats/oboInOwl#&lt;maxThroughput " >
+    <!ENTITY switchingSpeed "http://www.geneontology.org/formats/oboInOwl#&lt;switchingSpeed " >
+    <!ENTITY dataPlaneMemory "http://www.geneontology.org/formats/oboInOwl#&lt;dataPlaneMemory " >
+]>
+
+
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/TEMP#"
+     xml:base="http://purl.obolibrary.org/obo/TEMP"
+     xmlns:interfaceType="&oboInOwl2;&lt;interfaceType "
+     xmlns:hasInterface="&oboInOwl2;&lt;hasInterface "
+     xmlns:macAddress="&oboInOwl2;&lt;macAddress "
+     xmlns:maxThroughput="&oboInOwl2;&lt;maxThroughput "
+     xmlns:oboInOwl2="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:oboInOwl3="&oboInOwl2;&lt;/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:resourceName="&oboInOwl2;&lt;resourceName "
+     xmlns:ipAddress="&oboInOwl2;&lt;ipAddress "
+     xmlns:flowTableSize="&oboInOwl2;&lt;flowTableSize "
+     xmlns:totalPorts="&oboInOwl2;&lt;totalPorts "
+     xmlns:dataPlaneMemory="&oboInOwl2;&lt;dataPlaneMemory "
+     xmlns:totalMemory="&oboInOwl2;&lt;totalMemory "
+     xmlns:xmlns="&oboInOwl2;xmlns=&quot;"
+     xmlns:resourceURI="&oboInOwl2;&lt;resourceURI "
+     xmlns:cpuFrequency="&oboInOwl2;&lt;cpuFrequency "
+     xmlns:switchingSpeed="&oboInOwl2;&lt;switchingSpeed "
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dataPlaneCpu="&oboInOwl2;&lt;dataPlaneCpu "
+     xmlns:hasComponent="&oboInOwl2;&lt;hasComponent "
+     xmlns:oboInOwl="&oboInOwl2;&lt;"
+     xmlns:usedPorts="&oboInOwl2;&lt;usedPorts ">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/TEMP">
+        <xmlns:http rdf:datatype="&xsd;string">//www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#&quot;</xmlns:http>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Host&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NetworkElement&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#StorageComponent&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#availableStorage&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#bandwidth&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#coresPerSocket&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#cpuFrequency&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#dataPlaneCpu&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#flowTableSize&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasComponent&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasDestPort&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasInterface&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasPort&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasSrcPort&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hyperType&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hyperVer&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceType&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ipAddress&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isComponentOf&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isDestPortOf&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isPortOf&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isSrcPortOf&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#latency&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#macAddress&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#maxThroughput&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeClass&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeModel&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeProperties&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portLatency&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portProperties&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#storageProperties&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_2&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_2_compute&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_2_interface&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_2_switching&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_3&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_3_switching&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingSpeed&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#threadsPerCore&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">Description rdf:about=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#usedPorts&quot;&gt;</oboInOwl:rdf>
+        <oboInOwl3:rdf rdf:datatype="&xsd;string">Description&gt;</oboInOwl3:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">RDF</oboInOwl:rdf>
+        <dataPlaneMemory:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;144.0&lt;/dataPlaneMemory&gt;</dataPlaneMemory:rdf>
+        <dataPlaneCpu:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;200.0&lt;/dataPlaneCpu&gt;</dataPlaneCpu:rdf>
+        <totalMemory:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;256.0&lt;/totalMemory&gt;</totalMemory:rdf>
+        <maxThroughput:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;282.1&lt;/maxThroughput&gt;</maxThroughput:rdf>
+        <switchingSpeed:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;379.2&lt;/switchingSpeed&gt;</switchingSpeed:rdf>
+        <cpuFrequency:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#double&quot;&gt;666.0&lt;/cpuFrequency&gt;</cpuFrequency:rdf>
+        <usedPorts:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#int&quot;&gt;0&lt;/usedPorts&gt;</usedPorts:rdf>
+        <flowTableSize:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#int&quot;&gt;1000&lt;/flowTableSize&gt;</flowTableSize:rdf>
+        <usedPorts:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#int&quot;&gt;2&lt;/usedPorts&gt;</usedPorts:rdf>
+        <totalPorts:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#int&quot;&gt;48&lt;/totalPorts&gt;</totalPorts:rdf>
+        <macAddress:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;00:00:ce:b1:27:c2:85:43&lt;/macAddress&gt;</macAddress:rdf>
+        <ipAddress:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;192.168.0.222&lt;/ipAddress&gt;</ipAddress:rdf>
+        <interfaceType:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;Ethernet&lt;/interfaceType&gt;</interfaceType:rdf>
+        <resourceURI:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;S#2&lt;/resourceURI&gt;</resourceURI:rdf>
+        <resourceURI:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;S#2_CMP&lt;/resourceURI&gt;</resourceURI:rdf>
+        <resourceURI:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;S#2_INTFS&lt;/resourceURI&gt;</resourceURI:rdf>
+        <resourceURI:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;S#2_SWG&lt;/resourceURI&gt;</resourceURI:rdf>
+        <resourceURI:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;S#3&lt;/resourceURI&gt;</resourceURI:rdf>
+        <resourceURI:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;S#3_SWG&lt;/resourceURI&gt;</resourceURI:rdf>
+        <resourceName:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;switch_2&lt;/resourceName&gt;</resourceName:rdf>
+        <resourceName:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;switch_2_compute&lt;/resourceName&gt;</resourceName:rdf>
+        <resourceName:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;switch_2_switching&lt;/resourceName&gt;</resourceName:rdf>
+        <resourceName:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;switch_3&lt;/resourceName&gt;</resourceName:rdf>
+        <resourceName:rdf rdf:datatype="&xsd;string">datatype=&quot;http://www.w3.org/2001/XMLSchema#string&quot;&gt;switch_3_switching&lt;/resourceName&gt;</resourceName:rdf>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">domain rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">domain rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Link&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">domain rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">domain rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:owl rdf:datatype="&xsd;string">inverseOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isComponentOf&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="&xsd;string">inverseOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isDestPortOf&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="&xsd;string">inverseOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="&xsd;string">inverseOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isInterfaceOf&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="&xsd;string">inverseOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isPortOf&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl:owl rdf:datatype="&xsd;string">inverseOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isSrcPortOf&quot;/&gt;</oboInOwl:owl>
+        <oboInOwl2:xmlns rdf:datatype="&xsd;string">owl=&quot;http://www.w3.org/2002/07/owl#&quot;</oboInOwl2:xmlns>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">range rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">range rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">range rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Port&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#double&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#int&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">range rdf:resource=&quot;http://www.w3.org/2001/XMLSchema#string&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl2:xmlns rdf:datatype="&xsd;string">rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</oboInOwl2:xmlns>
+        <oboInOwl2:xmlns rdf:datatype="&xsd;string">rdfs=&quot;http://www.w3.org/2000/01/rdf-schema#&quot; &gt;</oboInOwl2:xmlns>
+        <hasComponent:rdf rdf:datatype="&xsd;string">resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_2_compute&quot;/&gt;</hasComponent:rdf>
+        <hasInterface:rdf rdf:datatype="&xsd;string">resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_2_interface&quot;/&gt;</hasInterface:rdf>
+        <hasComponent:rdf rdf:datatype="&xsd;string">resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switch_2_switching&quot;/&gt;</hasComponent:rdf>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subClassOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NetworkElement&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subClassOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Node&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subClassOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#NodeComponent&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subClassOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#PhysicalInfrastructure&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#computeProperties&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#hasElement&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#interfaceProperties&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#isElementOf&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#linkProperties&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#nodeProperties&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#portProperties&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#storageProperties&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdfs rdf:datatype="&xsd;string">subPropertyOf rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#switchingProperties&quot;/&gt;</oboInOwl:rdfs>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:reso</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#ComputeComponent&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Interface&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#Switch&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.semanticweb.org/root/ontologies/2014/9/physicalNetOnt#SwitchingComponent&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.w3.org/2002/07/owl#Class&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.w3.org/2002/07/owl#DatatypeProperty&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.w3.org/2002/07/owl#ObjectProperty&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl:rdf rdf:datatype="&xsd;string">type rdf:resource=&quot;http://www.w3.org/2002/07/owl#Ontology&quot;/&gt;</oboInOwl:rdf>
+        <oboInOwl2:xmlns rdf:datatype="&xsd;string">xsd=&quot;http://www.w3.org/2001/XMLSchema#&quot;</oboInOwl2:xmlns>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#xmlns -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;xmlns"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;owl -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;owl"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;rdfs -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;rdfs"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;/rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;/rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;cpuFrequency rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;cpuFrequency rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;dataPlaneCpu rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;dataPlaneCpu rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;dataPlaneMemory rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;dataPlaneMemory rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;flowTableSize rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;flowTableSize rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;hasComponent rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;hasComponent rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;hasInterface rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;hasInterface rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;interfaceType rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;interfaceType rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;ipAddress rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;ipAddress rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;macAddress rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;macAddress rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;maxThroughput rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;maxThroughput rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;resourceName rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;resourceName rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;resourceURI rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;resourceURI rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;switchingSpeed rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;switchingSpeed rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;totalMemory rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;totalMemory rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;totalPorts rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;totalPorts rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#&lt;usedPorts rdf -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;&lt;usedPorts rdf"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#xmlns=&quot;http -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl2;xmlns=&quot;http"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

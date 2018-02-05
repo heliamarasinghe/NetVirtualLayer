@@ -1,0 +1,181 @@
+
+ Start loading ontology time. 0.0
+
+ complete loading ontology time. 0.838
+
+ Start preparing simulation
+
+ Retrieve all the request files successfully
+
+ Serving Arrival Request No. 0.0
+Enhanced Discovery activated for resource 1
+Enhanced Discovery activated for resource 2
+
+ Start Composing Request :0.0
+
+ Reserved Resources  successfully : Request : 0.0
+
+ Serving Arrival Request No. 1.0
+Enhanced Discovery activated for resource 1
+Enhanced Discovery activated for resource 2
+
+ Start Composing Request :1.0
+
+ Reserved Resources  successfully : Request : 1.0
+
+ Serving Arrival Request No. 2.0
+Enhanced Discovery activated for resource 1
+
+ Start Composing Request :2.0
+
+ Reserved Resources  successfully : Request : 2.0
+
+--------------------------------------------------------------------------------
+
+ Link states after simulation 
+
+ -----------------------------------------------------------------
+
+ Simulation Analysis 
+
+ ---------------------------------------------------------------- 
+
+ Number of succeeded Requests : 3
+
+ Number of partial Requests : 0
+
+ Number of failed Requests : 0
+
+ Total Requested resources : 8.0
+
+ Total Discovered resources : 8.0
+
+ Total Composed resources : 13.0
+
+ Average semantic query Discovery time  : 0.030282417582417575
+
+ Average semantic query Composition time  : 0.008099206349206262
+
+ Ontology load time : 0.837
+
+ Total number of Queries :127.0
+
+ Average number of Queries :42.333333333333336
+
+ Average Datacenter Server Utilization  : NaN
+
+ Average Datacenter link Utilization   : NaN
+
+ Total Simulation Time : -1.4321539967350001E9
+
+ ---------------------------------------------------------------------------------------------
+
+ ------------------------------------------------------------------
+
+ Maximum Number of request concurrently running : 3
+
+ ------------------------------------------------------------------
+
+ Total number of class 1 requests : 0 Accepted 0
+
+ Total number of class 2 requests : 0 Accepted 0
+
+ Total number of class 3 requests : 3 Accepted 3
+
+ ------------------------------------------------------------------
+
+ Total reserved CPU : 8.0
+
+ Total reserved Mem : 8.0
+
+ Total reserved Str : 800.0
+
+ -----------------------------------------------------------------
+
+ Total CPU Resources   : 48.0
+
+ Total Memory  Resources  : 96.0
+
+ Total storage Resources   : 12000.0
+
+ -----------------------------------------------------------------
+
+ CPU Resources utilization  : 16.666666666666664
+
+ mem  Resources utilization : 8.333333333333332
+
+ storage Resources utilization  : 6.666666666666667
+
+ -----------------------------------------------------------------
+
+ CPU_V_Resources_utilization  : 16.666666666666664
+
+ mem_V_Resources_utilization : 8.333333333333332
+
+ storage_V_Resources_utilization  : 6.666666666666667
+
+ -----------------------------------------------------------------
+
+ Class A CPU_Resources_utilization  : 0.0
+
+ Class A mem_Resources_utilization : 0.0
+
+ Class A storage_Resources_utilization  : 0.0
+
+ -----------------------------------------------------------------
+
+ Class B CPU_Resources_utilization  : 0.0
+
+ Class B mem_Resources_utilization : 0.0
+
+ Class B storage_Resources_utilization  : 0.0
+
+ -----------------------------------------------------------------
+
+ Class C CPU_Resources_utilization  : 800.0
+
+ Class C mem_Resources_utilization : 1600.0
+
+ Class C storage_Resources_utilization  : 2.0E7
+
+ -----------------------------------------------------------------
+
+ Total number of class 1 requests : 0 Accepted 0
+
+ Total number of class 2 requests : 0 Accepted 0
+
+ Total number of class 3 requests : 3 Accepted 3
+
+ ------------------------------------------------------------------
+
+ Acceptance ratio class 1 requests : NaN
+
+ Acceptance ratio class 2 requests : NaN
+
+ Acceptance ratio class 3 requests : 100.0
+
+ ------------------------------------------------------------------
+
+ Class_A_CPU_Resources_utilization  : 0.0
+
+ Class_A_mem_Resources_utilization : 0.0
+
+ Class_A_storage_Resources_utilization  : 0.0
+
+ -----------------------------------------------------------------
+
+ Class_B_CPU_Resources_utilization  : 0.0
+
+ Class_B_mem_Resources_utilization : 0.0
+
+ Class_B_storage_Resources_utilization  : 0.0
+
+ -----------------------------------------------------------------
+
+ Class_C_CPU_Resources_utilization  : 800.0
+
+ Class_C_mem_Resources_utilization : 1600.0
+
+ Class_C_storage_Resources_utilization  : 2.0E7
+
+ -----------------------------------------------------------------
